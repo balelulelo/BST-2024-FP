@@ -29,6 +29,22 @@ header {
     margin-bottom: 30px;
 }
 
+#note-title, #search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+#note-title:focus, #search-input:focus {
+    border-color: #ffffff;
+    outline: none;
+}
+
 #note-input {
     width: 100%;
     height: 120px;
@@ -86,13 +102,22 @@ header {
     transform: translateY(-2px); 
 }
 
+.note-item h3 {
+    margin: 0;
+    padding-bottom: 4px; 
+    font-size: 1.2em; 
+    color: #333;
+}
+
 .note-item p {
     margin: 0;
+    padding-left: 2px; 
     font-size: 1em;
-    flex-grow: 1;
-    padding-right: 10px;
     color: #555;
+    flex-grow: 1;
 }
+
+
 
 .delete-note {
     background-color: #0e0e0e;
